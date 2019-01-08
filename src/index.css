@@ -1,0 +1,111 @@
+body {
+  font-family: verdana, sans-serif;
+  font-size: 12px;
+}
+.app-header {
+  background-color: #000;
+  color: white;
+  padding: 10px;
+  display: -webkit-box;
+  display: flex;
+  flex-wrap: nowrap;
+}
+.app-header .navbar {
+    width: 100%;
+  }
+.app-header .navbar .navbar-brand {
+      font-size: 2rem;
+    }
+.app-header .navbar .search {
+      width: 600px;
+      margin-left: auto;
+      align-self: end;
+    }
+.app-header .navbar .navbar-toggler {
+      display: none;
+    }
+.app-link {
+  color: #61dafb;
+}
+.carousel-item img {
+    width: 100%;
+    height: 280px;
+  }
+.card-col {
+  display: -webkit-box;
+  display: flex;
+  max-width: 1200px;
+  margin: 20px auto;
+}
+.card-col .card {
+    border: 0;
+    margin: 0 20px 20px 0;
+    text-align: center;
+  }
+.card-col .card .card-img-top {
+      width: 200px;
+      height: 200px;
+      border-radius: 200px;
+      margin: 0 auto;
+    }
+.card-col .card .card-title {
+      font-size: 1.2rem;
+      font-weight: bold;
+    }
+.card-row {
+  max-width: 1200px;
+  margin: 20px auto;
+}
+.card-row .card {
+    border: 0;
+    margin-bottom: 20px;
+  }
+.card-row .card .card-img-top {
+      width: 50%;
+      position: absolute;
+      right: 0;
+      height: 100%; 
+    }
+.card-row .card .card-title {
+      font-size: 2rem;
+    }
+.card-row .card .card-body {
+      width: 50%;
+    }
+.card-row .card:nth-child(2) .card-img-top {
+        left: 0;
+      }
+.card-row .card:nth-child(2) .card-body {
+        margin-left: 50%;
+      }
+.app-footer {
+  margin: 20px;
+  font-size: .8rem;
+}
+@media only screen and (max-width: 600px) {
+      .app-header .navbar .app-nav {
+        display: none;
+      }
+      .app-header .navbar .search {
+        display: none;
+      }
+      .app-header .navbar .navbar-toggler {
+        display: block;
+      }
+  .card-col {
+    display: block;
+  }
+      .card-row .card .card-img-top {
+        position: relative;
+        width: auto;
+        margin: 20px;
+      }
+      .card-row .card .card-body {
+        width: 100%;
+      }
+        .card-row .card:nth-child(2) .card-body {
+          margin-left: 0;
+        }
+}
+
+
